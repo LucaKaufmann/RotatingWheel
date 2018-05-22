@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81841FA820AF2E510039458A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81841FA720AF2E510039458A /* ViewController.swift */; };
 		819E05F2209878DF003DCCE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819E05F1209878DF003DCCE7 /* AppDelegate.swift */; };
-		819E05F4209878DF003DCCE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819E05F3209878DF003DCCE7 /* ViewController.swift */; };
 		819E05F7209878DF003DCCE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 819E05F5209878DF003DCCE7 /* Main.storyboard */; };
 		819E05F9209878E0003DCCE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 819E05F8209878E0003DCCE7 /* Assets.xcassets */; };
 		819E05FC209878E0003DCCE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 819E05FA209878E0003DCCE7 /* LaunchScreen.storyboard */; };
 		819E0607209878E0003DCCE7 /* RotatingWheelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819E0606209878E0003DCCE7 /* RotatingWheelTests.swift */; };
 		819E0612209878E0003DCCE7 /* RotatingWheelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819E0611209878E0003DCCE7 /* RotatingWheelUITests.swift */; };
+		819E062020987956003DCCE7 /* RotatingWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819E061F20987956003DCCE7 /* RotatingWheel.swift */; };
+		819E062220987CC6003DCCE7 /* RotatingWheelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819E062120987CC6003DCCE7 /* RotatingWheelProtocol.swift */; };
+		819E06252098B576003DCCE7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 819E06242098B576003DCCE7 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		81841FA720AF2E510039458A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		819E05EE209878DF003DCCE7 /* RotatingWheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RotatingWheel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		819E05F1209878DF003DCCE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		819E05F3209878DF003DCCE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		819E05F6209878DF003DCCE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		819E05F8209878E0003DCCE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		819E05FB209878E0003DCCE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		819E060D209878E0003DCCE7 /* RotatingWheelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RotatingWheelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		819E0611209878E0003DCCE7 /* RotatingWheelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingWheelUITests.swift; sourceTree = "<group>"; };
 		819E0613209878E0003DCCE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		819E061F20987956003DCCE7 /* RotatingWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingWheel.swift; sourceTree = "<group>"; };
+		819E062120987CC6003DCCE7 /* RotatingWheelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingWheelProtocol.swift; sourceTree = "<group>"; };
+		819E06242098B576003DCCE7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				819E06252098B576003DCCE7 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +88,7 @@
 				819E0605209878E0003DCCE7 /* RotatingWheelTests */,
 				819E0610209878E0003DCCE7 /* RotatingWheelUITests */,
 				819E05EF209878DF003DCCE7 /* Products */,
+				819E06232098B576003DCCE7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +105,10 @@
 		819E05F0209878DF003DCCE7 /* RotatingWheel */ = {
 			isa = PBXGroup;
 			children = (
+				819E061F20987956003DCCE7 /* RotatingWheel.swift */,
+				819E062120987CC6003DCCE7 /* RotatingWheelProtocol.swift */,
 				819E05F1209878DF003DCCE7 /* AppDelegate.swift */,
-				819E05F3209878DF003DCCE7 /* ViewController.swift */,
+				81841FA720AF2E510039458A /* ViewController.swift */,
 				819E05F5209878DF003DCCE7 /* Main.storyboard */,
 				819E05F8209878E0003DCCE7 /* Assets.xcassets */,
 				819E05FA209878E0003DCCE7 /* LaunchScreen.storyboard */,
@@ -123,6 +133,14 @@
 				819E0613209878E0003DCCE7 /* Info.plist */,
 			);
 			path = RotatingWheelUITests;
+			sourceTree = "<group>";
+		};
+		819E06232098B576003DCCE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				819E06242098B576003DCCE7 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				819E05F4209878DF003DCCE7 /* ViewController.swift in Sources */,
+				819E062220987CC6003DCCE7 /* RotatingWheelProtocol.swift in Sources */,
+				819E062020987956003DCCE7 /* RotatingWheel.swift in Sources */,
+				81841FA820AF2E510039458A /* ViewController.swift in Sources */,
 				819E05F2209878DF003DCCE7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,11 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, RotatingWheelProtocol {
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let wheel = RotatingWheel(frame: CGRect(x: 0, y: 0, width: 200, height: 200),
+                                  delegate: self,
+                                  sections: 9)
+        self.view.addSubview(wheel)
+        wheel.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        wheel.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        wheel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+//        wheel.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,5 +30,9 @@ class ViewController: UIViewController {
     }
 
 
+    func wheelDidChange(value: String) {
+        return
+    }
+    
 }
 
